@@ -77,3 +77,22 @@ h1{
     flex-wrap: wrap;
     gap:10px;
 }
+.stats-card{
+    margin-top: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* adds space between cards */
+    justify-content: center; /* center cards */
+}
+
+.card {
+    background-color: orange;
+    color: black;
+    width: 45%; /* two cards per row on average */
+    max-width: 250px;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    font-weight: bold;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
