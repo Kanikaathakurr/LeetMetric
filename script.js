@@ -134,6 +134,15 @@ document.addEventListener("DOMContentLoaded",function(){
         {label:"Overall Hard Submissions",value:parsedData.data.matchedUser.submitStats.totalSubmissionNum[3].submissions},
        ];
 
+       cardStatsContainer.innerHTML = cardData.map(data => {
+        return `
+          <div class="card">
+              <h4>${data.label}</h4>
+              <p>${data.value}</p>
+          </div>
+        `;
+      }).join(''); // 🔑 join the array to form one HTML string
+      
        
          
     }
